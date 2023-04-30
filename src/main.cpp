@@ -68,7 +68,7 @@ void escribe_SD(String dataString){
   if (dataFile) {
     dataFile.println(dataString);
     dataFile.close();
-    // print to the serial port too:
+    // print to the serial port too
   }
   // if the file isn't open, pop up an error:
   else {
