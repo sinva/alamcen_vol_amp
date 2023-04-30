@@ -15,7 +15,7 @@
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 #define oneWirePin 2
 #define chipSelect 53 //Puerto CS
-#define Nom_Fich "log.csv"
+String Nom_Fich = "log.csv";
 DeviceAddress insideThermometer = { 0x28, 0xFF, 0x64, 0x0E, 0x78, 0x28, 0xFA, 0x24 };
 DeviceAddress outsideThermometer = { 0x28, 0xFF, 0x64, 0x0E, 0x78, 0x1B, 0x9D, 0xBA };
 float SENSIBILITY = 0.066; // Modelo 30A
@@ -33,10 +33,11 @@ RTC_DS1307 rtc; //reloj DS1307
 //RTC_DS3231 rtc; //reloj DS3231
 
 void incializa_SD(){
-  String str = Nom_Fich;
-  int str_len = str.length() + 1;
+  DateTime now = rtc.now();
+  Nom_Fich = "log_" + String(now.day()) + "-" + String(now.month()) + "-" + String(now.year()) + ".log";
+  int str_len = Nom_Fich.length() + 1;
   char char_fich[str_len];
-  str.toCharArray(char_fich, str_len);
+  Nom_Fich.toCharArray(char_fich, str_len);
   Serial.println("Initializing SD card...");
 
   // see if the card is present and can be initialized:
@@ -56,10 +57,13 @@ void incializa_SD(){
 }
 
 void escribe_SD(String dataString){
-  String str = Nom_Fich;
-  int str_len = str.length() + 1;
+  DateTime now = rtc.now();
+  if (Nom_Fich != "log_" + String(now.day()) + "-" + String(now.month()) + "-" + String(now.year()) + ".log"){
+     incializa_SD();
+  }
+  int str_len = Nom_Fich.length() + 1;
   char char_fich[str_len];
-  str.toCharArray(char_fich, str_len);
+  Nom_Fich.toCharArray(char_fich, str_len);
   // open the file. note that only one file can be open at a time,
   // so you have to close this one before opening another.
   File dataFile = SD.open(char_fich, FILE_WRITE);

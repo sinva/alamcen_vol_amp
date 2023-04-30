@@ -1,0 +1,72 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/include",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/src",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/SD",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/RTClib/src",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/Adafruit BusIO",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/DallasTemperature",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/OneWire",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/DHT sensor library",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor",
+                "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/LiquidCrystal/src",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/variants/mega",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/include",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/src",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/SD",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/RTClib/src",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/Adafruit BusIO",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/DallasTemperature",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/OneWire",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/DHT sensor library",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor",
+                    "/home/puesto/Documentos/PlatformIO/Projects/arduino2/.pio/libdeps/megaatmega2560/LiquidCrystal/src",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/variants/mega",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/puesto/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60106",
+                "ARDUINO_AVR_MEGA2560",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega2560__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/home/puesto/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega2560",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
